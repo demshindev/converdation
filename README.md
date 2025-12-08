@@ -20,8 +20,8 @@ pretty = format_value("json", {"b": 2, "a": 1}, indent=4, sort_keys=True)
 
 ## API
 - `convert(value, source, target) -> Any`
-  - Built-ins: `json->xml`, `xml->json`, `unix_timestamp->datetime_iso`, `datetime_iso->unix_timestamp`.
-  - Inputs: `json->xml`: `Mapping | list | tuple`; `xml->json`: `str`; `unix_timestamp->datetime_iso`: `int | float`; `datetime_iso->unix_timestamp`: `str`.
+  - Built-ins: `json<->xml`, `unix_timestamp<->datetime_iso`, `decimal<->binary`, `decimal<->octal`, `decimal<->hex`, `binary<->octal`, `binary<->hex`, `octal<->hex`.
+  - Inputs: `json->xml`: `Mapping | list | tuple`; `xml->json`: `str`; time: `int|float` or `str`; number base: decimal inputs `int`, other bases as `str` without prefixes/underscores.
   - Raises `ConversionError` on wrong type/format/missing converter.
 
 - `generate(name, **kwargs) -> Any`

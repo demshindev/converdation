@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "converdation"
-version = "0.0.1b0"
+version = "0.0.2b0"
 description = "The most essential tools for developers"
 readme = "README.md"
 requires-python = ">=3.9"
